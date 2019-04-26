@@ -18,6 +18,8 @@ class HomePage extends Component {
     this.textsToCompare = document.getElementById('textsToCompare').value;
     this.splitText = document.getElementById('splitText').value;
 
+    document.getElementById('App-logo').style.animationPlayState   = 'running';
+
     console.log(this.baseUrl)
     axios.post(this.baseUrl + '/home/',
       {
@@ -29,12 +31,13 @@ class HomePage extends Component {
       console.log("Sukces")
       console.log(response)
       document.getElementById('result').value = response.data;
-    //   alert(response);
+      document.getElementById('App-logo').style.animationPlayState   = 'paused';        
     }).catch((error) => {
       console.log(error);
       window.alert("Błąd podczas wysyłania żądania.")
+      document.getElementById('App-logo').style.animationPlayState   = 'paused';
     });
-  }
+}
 
   render() {
     return (
@@ -44,7 +47,7 @@ class HomePage extends Component {
                 <textarea id="textPattern" className="textPattern" rows="13" cols="25" placeholder="tekst wzorcowy"></textarea>
                 <button className="btn btn-danger">Anuluj</button>
             </div>
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} id="App-logo" className="App-logo" alt="logo" />
                 <div className="right-container">
                 <label>Teksty do porównania</label>
                 <textarea id="textsToCompare" className="textsToCompare" rows="13" cols="25" placeholder="teksty do porównania"></textarea>
