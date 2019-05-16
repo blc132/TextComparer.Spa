@@ -3,7 +3,7 @@
 TextComparer - prosty program do porównywania tekstów.
 Na wejście zadajemy:
 - Tekst wzorcowy
-- Teksty do porównania (wrzucamy je do jednego inputu i rozdzielamy 'symbolami rozdzielającymi')
+- Teksty do porównania (wrzucamy je do jednego inputu i rozdzielamy symbolem rozdzielającymi)
 - Symbol rozdzielający
 - URL Api
 
