@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import './HomePage.css';
 import axios from 'axios';
+import { Button } from 'react-bootstrap'
 
 class HomePage extends Component {
 
@@ -42,18 +43,22 @@ class HomePage extends Component {
   render() {
     return (
         <div className="HomePage">
-            <div className="left-container">
-                <label>Tekst wzorcowy</label>
-                <textarea id="textPattern" className="textPattern" rows="13" cols="25" placeholder="tekst wzorcowy"></textarea>
-                <button className="btn btn-danger">Anuluj</button>
-            </div>
-            <img src={logo} id="App-logo" className="App-logo" alt="logo" />
-                <div className="right-container">
-                <label>Teksty do porównania</label>
-                <textarea id="textsToCompare" className="textsToCompare" rows="13" cols="25" placeholder="teksty do porównania"></textarea>
-                <input id="splitText" className="splitText" placeholder="tekst rozdzielający"></input>
-                <input id="apiAdress" defaultValue="https://localhost:44309/api/" className="apiAdress" placeholder="adres API"></input>
-                <button className="btn btn-primary" onClick={this.onSave}>Porównaj</button>
+          <div className="main-container">
+              <div className="left-container">
+                  <label>Tekst wzorcowy</label>
+                  <textarea id="textPattern" className="textPattern" rows="13" cols="25" placeholder="tekst wzorcowy"></textarea>
+                  <button className="btn btn-danger">Anuluj</button>
+              </div>
+              <div>
+                <img src={logo} id="App-logo" className="App-logo" alt="logo" />
+              </div>
+                  <div className="right-container">
+                  <label>Teksty do porównania</label>
+                  <textarea id="textsToCompare" className="textsToCompare" rows="13" cols="25" placeholder="teksty do porównania"></textarea>
+                  <input id="splitText" className="splitText" placeholder="tekst rozdzielający"></input>
+                  <input id="apiAdress" defaultValue="https://localhost:44309/api/" className="apiAdress" placeholder="adres API"></input>
+                  <button className="btn btn-primary" onClick={this.onSave}>Porównaj</button>
+              </div>
             </div>
             <div className="down-container">
                 <textarea id="result" className="result" placeholder="wynik"></textarea>
