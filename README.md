@@ -7,6 +7,11 @@ Na wejście zadajemy:
 - Symbol rozdzielający
 - URL Api
 
+Żeby odpalić projekt:
+- git clone [link-do-repo]
+- npm install (w ściągniętym repo)
+- npm start
+
 Program zwraca procentowe podobieństwo tekstu wzorcowego do każdego zadanego tekstu 
 
 #### This project was written with ❤️.
