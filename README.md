@@ -20,8 +20,8 @@ Program zwraca procentowe podobieństwo tekstu wzorcowego do każdego zadanego t
   ##### Przykład:
 - Tekst wzorcowy: "TEKST WZORCOWY"
 - Teksty do porównania: "TEKST WZORCOWY**123**TEKST DRUGI**123**TEKST TRZECI"
-- Tekst rozdzielający: "123"
-Daje nam 3 teksty do porównania i wyniki w przybliżeniu: 100%, 50%, 50%
+- Tekst rozdzielający: "123"  
+ Daje nam 3 teksty do porównania i wyniki w przybliżeniu: 100%, 50%, 50%
 ------------
 
 #### This project was written with ❤️.
